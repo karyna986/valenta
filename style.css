@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-top {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(202, 197, 197);
+    margin-top: 20px;
+}
+.logo {
+    width: 140px;
+    height: 80px;
+    background: url(./img/logo.png) no-repeat;
+    background-size: contain;
+}
+.line {
+    width: 1px;
+    height: 40px;
+    background-color: #E2E2E2;
+    margin-top: 17px;
+}
+.ua {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+.ua a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #808080;
+}
+.ua a:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+	background-color: rgb(0, 255, 76);
+    color: rgb(255, 255, 255);
+	font-weight:bold;
+    text-align: center;
+}
+.dengi{
+    width: 110px;
+    margin-top: 12px;
+}
+.dengi p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+.icons {
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons i {
+    font-size: 17px;
+    color: #808080;
+    height: 30px;
+}
+
+.phone {
+    width: 180px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 12px;
+}
+.phone p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin: 5px 0 0 15px;
+    font-weight: bold;
+}
+.phone i {
+    font-size: 50px;
+    color: #808080;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+.maistra{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.maistra-text {
+    background-color: #cac8c8;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.maistra-icons {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maistra-icons i{ 
+    font-size: 16px;
+    color: #ffffff;
+}
+.search-text {
+    background-color: #cac8c8;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.search-text p, .maistra-text p {
+   margin-top: 15px;
+}
+.search-icons {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icons i{ 
+    font-size: 16px;
+    color: #ffffff;
+}
+.search {
+    width: 200px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.header-menu ul {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+   
+}
+ul {
+    display: block;
+    position: relative;
+}
+ul li {
+    display: flex;
+
+    list-style-type: none;
+    padding: 20px 0;
+} 
+.fa-caret-down, .fa-search {
+    padding: 2px 5px ;
+    color: #808080;
+}
+ul li ul li {
+    display: block;
+    color: #808080;
+    background-color: rgb(255, 255, 255);
+  
+}
+ul ul  {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    opacity: 0;
+   
+}
+ul ul li {
+    padding: 10px 20px;
+}
+ul li:hover >ul {
+    display: block;
+    opacity: 1;
+}
+ul li a {
+    text-decoration: none;
+    color: #808080;
+    display: block;
+}
+.header-banner{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(./img/maxresdefault.png) no-repeat;
+    background-size: cover;
+}
+.banner-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.banner-tit {
+    width: 250px;
+    height: 50px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    
+}
+.banner-tit p {
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.banner-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 45%;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 280px;
+    left: 0;
+}
